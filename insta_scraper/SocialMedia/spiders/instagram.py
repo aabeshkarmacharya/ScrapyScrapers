@@ -20,7 +20,7 @@ class InstagramSpider(scrapy.Spider):
         super().__init__(**kwargs)
         self.username = self.username
         self.session_file = self.session_file
-        self.conn = MySQLdb.connect('192.185.155.213', 'ncom_mmiia', 'mmiiad6%ghdjHf', 'ncom_mmiia', charset="utf8",
+        self.conn = MySQLdb.connect('127.0.0.1', 'root', 'root', 'rootdb', charset="utf8",
                                     use_unicode=True)
         self.cursor = self.conn.cursor()
 
