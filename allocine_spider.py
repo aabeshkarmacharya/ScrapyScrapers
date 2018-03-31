@@ -1,3 +1,6 @@
+# Scrapes film data from www.allocine.fr
+# {actors, trailer, images}
+
 import re
 import scrapy
 from scrapy import Request
