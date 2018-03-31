@@ -71,7 +71,7 @@ class TwitterSpider(scrapy.Spider):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.conn = MySQLdb.connect('192.185.155.213', 'ncom_mmiia', 'mmiiad6%ghdjHf', 'ncom_mmiia', charset="utf8",
+        self.conn = MySQLdb.connect('127.0.0.1', 'root', 'root', 'rootdb', charset="utf8",
                                     use_unicode=True)
         self.cursor = self.conn.cursor()
         self.id = ''
